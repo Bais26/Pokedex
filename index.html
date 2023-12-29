@@ -7,18 +7,16 @@
     <link rel="stylesheet" href="dist/output.css">
 </head>
 <body>
-    <h1 class="text-center text-2xl">list Pokemon</h1>
-    <div id="Pokemon" class="flex flex-wrap p-12 text-center justify-center">
-        <template id="getPokemon">
-            <ul class="list-none">
-                <li>
-                    <img src="" alt="" class="p-12"/>
-                    <h2></h2>
-                    <p>Type: </p>
-                </li>
-            </ul>
+    <h1 class="text-center text-2xl font-bold my-6">list Pokemon</h1>
+    <div id="Pokemon" class="grid grid-cols-6 justify-center gap-4 px-12 my-4">
+        <template id="getPokemon" class="">
+            <div class="p-2 border-solid border-2 border-gray-200 rounded-xl text-center shadow-xl">
+                <img src="" alt="" class="px-12 p-12"/>
+                <h2 class="text-2xl font-bold"></h2>
+                <p>Type: </p>
+            </div>
         </template>
     </div>
     <script src="index.js"></script>
 </body>
-</html>
+</html>     
